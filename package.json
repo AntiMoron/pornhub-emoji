@@ -1,0 +1,30 @@
+{
+  "name": "pornhub-emoji",
+  "version": "1.0.0",
+  "description": "生成'我'好了 类似物",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AntiMoron/pornhub-emoji.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AntiMoron/pornhub-emoji/issues"
+  },
+  "homepage": "https://github.com/AntiMoron/pornhub-emoji#readme",
+  "devDependencies": {
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "babel-loader": "^8.0.5",
+    "path": "^0.12.7",
+    "webpack": "^4.29.6"
+  },
+  "dependencies": {
+    "dom-to-image": "^2.6.0",
+    "file-saver": "^2.0.1",
+  }
+}
