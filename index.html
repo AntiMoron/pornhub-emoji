@@ -8,9 +8,6 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
     <style>
-        body {
-            width: 600px;
-        }
         #container {
             display: inline-block;
             padding-top: 6px;
@@ -85,6 +82,12 @@
         onclick="javascript:window.location.href='https\:\/\/github.com\/AntiMoron\/pornhub-emoji'">Github</button>
     <script src="./public/index.min.js"></script>
     <script>
+
+        var ua = navigator.userAgent,
+            mobile = /IEMobile|Windows Phone|Lumia/i.test(ua) ? 'w' : /iPhone|iP[oa]d/.test(ua) ? 'i' : /Android/.test(ua) ? 'a' : /BlackBerry|PlayBook|BB10/.test(ua) ? 'b' : /Mobile Safari/.test(ua) ? 's' : /webOS|Mobile|Tablet|Opera Mini|\bCrMo\/|Opera Mobi/i.test(ua) ? 1 : 0;
+        if (mobile) {
+            document.body.style.width = '600px';
+        }
         window.first = 'I\'m';
         window.second = 'OK';
         document.querySelector('#f').oninput = function (e) {
