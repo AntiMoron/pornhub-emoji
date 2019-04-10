@@ -18,16 +18,15 @@
             font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
         }
 
-        #f {
+        #first {
             display: inline-block;
             background: #000000;
             font-size: 36px;
             font-weight: 800;
             color: #ffffff;
-            border: 1px solid '#efefef';
         }
 
-        #s {
+        #second {
             display: inline-block;
             border-radius: 10px;
             padding: 5px 10px;
@@ -37,6 +36,13 @@
             font-size: 36px;
             font-weight: 800;
             color: #000000;
+        }
+
+        #f {
+            border: 1px solid '#efefef';
+        }
+
+        #s {
             border: 1px solid '#efefef';
         }
 
@@ -71,7 +77,7 @@
     </div>
     <button id="downloader" class="button"
         onclick="javascript:window.generate(window.first, window.second)">Generate</button>
-    <button id="downloader" class="button star-button"
+    <button class="button star-button"
         onclick="javascript:window.location.href='https\:\/\/github.com\/AntiMoron\/pornhub-emoji'">Github</button>
     <script src="./public/index.min.js"></script>
     <script>
