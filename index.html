@@ -40,7 +40,7 @@
             border: 1px solid '#efefef';
         }
 
-        #downloader {
+        .button {
             background: #3498db;
             width: 100%;
             height: 36px;
@@ -49,6 +49,11 @@
             border: 0;
             margin-top: 8px;
             color: white;
+            max-width: 400px;
+        }
+
+        .star-button {
+            background: #f1c40f;
         }
     </style>
 </header>
@@ -62,7 +67,8 @@
     </div>
     <input id="f" type="text" oninput="window.inputFirst" />
     <input id="s" type="text" oninput="window.inputSecond" />
-    <button id="downloader" onclick="javascript:window.generate(window.first, window.second)">Generate</button>
+    <button id="downloader" class="button" onclick="javascript:window.generate(window.first, window.second)">Generate</button>
+    <button id="downloader" class="button star-button" onclick="javascript:window.location.href='https\:\/\/github.com\/AntiMoron\/pornhub-emoji'">Github</button>
     <script src="./public/index.min.js"></script>
     <script>
         window.first = 'I\'m';
