@@ -38,12 +38,12 @@
             color: #000000;
         }
 
-        #f {
-            border: 1px solid '#efefef';
-        }
-
-        #s {
-            border: 1px solid '#efefef';
+        .input-text {
+            border: 1px solid #efefef;
+            font-size: 17px;
+            line-height: 26px;
+            padding-left: 4px;
+            padding-right: 4px;
         }
 
         .button {
@@ -72,8 +72,8 @@
         </div>
     </div>
     <div>
-        <input id="f" type="text" oninput="window.inputFirst" />
-        <input id="s" type="text" oninput="window.inputSecond" />
+        <input id="f" class="input-text" type="text" oninput="window.inputFirst" />
+        <input id="s" class="input-text" type="text" oninput="window.inputSecond" />
     </div>
     <button id="downloader" class="button"
         onclick="javascript:window.generate(window.first, window.second)">Generate</button>
